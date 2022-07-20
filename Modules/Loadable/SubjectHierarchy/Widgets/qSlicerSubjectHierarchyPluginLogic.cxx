@@ -539,7 +539,9 @@ void qSlicerSubjectHierarchyPluginLogic::onDisplayMenuEvent(vtkObject* displayNo
 
   // Show menu
   d->ViewMenu->move(QCursor::pos());
-  d->ViewMenu->exec();
+
+  //HACK: Disable menu entirely
+  //d->ViewMenu->exec();
 }
 
 //-----------------------------------------------------------------------------
